@@ -1,6 +1,12 @@
-const blogSlugPage = async ({ params }) => {
-	const { slug } = await params;
-	return <div>page for blog {slug}</div>;
-};
+import BlogContent from "@/components/blog/BlogContent";
+import RelatedPosts from "@/components/blog/RelatedPosts";
 
-export default blogSlugPage;
+export default async function BlogPostPage({ params }) {
+	const { slug } = await params;
+	return (
+		<div className="min-h-screen pt-32">
+			<BlogContent slug={slug} />
+			<RelatedPosts currentSlug={slug} />
+		</div>
+	);
+}
