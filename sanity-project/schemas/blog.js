@@ -9,6 +9,17 @@ export default {
       type: 'string',
     },
 
+    // slug field
+    {
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+      options: {
+        source: 'title',
+        maxLength: 96,
+      },
+    },
+
     // Rich Text Field (Portable Text)
     {
       name: 'content',
