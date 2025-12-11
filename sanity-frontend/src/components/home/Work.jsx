@@ -7,21 +7,21 @@ export default function Works() {
 			title: "E-Commerce Platform",
 			description:
 				"A full-featured online store built with Next.js and Stripe integration.",
-			image: "/ecommerce-platform-modern.jpg",
+			image: "/projectEcom.png",
 		},
 		{
 			id: 2,
 			title: "Social Media Dashboard",
 			description:
 				"Real-time analytics dashboard for social media management.",
-			image: "/social-media-analytics-dashboard.jpg",
+			image: "/projectSocial.png",
 		},
 		{
 			id: 3,
 			title: "Task Management App",
 			description:
 				"Collaborative task management with real-time updates.",
-			image: "/task-management-application.jpg",
+			image: "/projectTask.png",
 		},
 	];
 

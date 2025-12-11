@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function About() {
 	const skills = [
 		"React",
@@ -11,12 +13,14 @@ export default function About() {
 		<section className="section bg-card">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="grid md:grid-cols-2 gap-12 items-center">
-					<div className="relative h-96 bg-gradient-to-br from-accent/20 to-accent/5 rounded-2xl overflow-hidden">
-						<img
-							src="/developer-workspace-setup.jpg"
-							alt="About me"
-							className="w-full h-full object-cover"
-						/>
+					<div className="relative h-96 bg-linear-to-br from-accent/20 to-accent/5 rounded-2xl overflow-hidden">
+						<div className="relative size-full">
+							<Image
+								src="/projectAbout.png"
+								alt="About us image"
+								fill
+							/>
+						</div>
 					</div>
 
 					<div className="space-y-6">

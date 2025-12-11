@@ -72,10 +72,14 @@ export default async function BlogPreview() {
 						>
 							<div className="relative h-40 overflow-hidden bg-muted">
 								<img
-									src={urlFor(post.blogImage)
-										.width(600)
-										.height(400)
-										.url()}
+									src={
+										post.blogImage
+											? urlFor(post.blogImage)
+													.width(600)
+													.height(400)
+													.url()
+											: "/placeholder-image.png"
+									}
 									alt={post.title}
 									className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
 								/>

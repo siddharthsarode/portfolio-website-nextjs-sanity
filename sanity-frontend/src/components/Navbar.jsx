@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
@@ -29,7 +30,12 @@ export default function Navbar() {
 						href="/"
 						className="font-bold text-xl text-primary hover:text-accent transition-colors"
 					>
-						S.
+						<Image
+							src={"/projectLogo.png"}
+							alt="Siddharth's Portfolio"
+							width={160}
+							height={140}
+						/>
 					</Link>
 
 					<div className="hidden md:flex items-center gap-8">

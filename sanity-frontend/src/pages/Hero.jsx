@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Hero() {
@@ -29,33 +30,43 @@ export default function Hero() {
 
 						<div className="flex gap-4 pt-4">
 							<a
-								href="#"
+								href="https://github.com/siddharthsarode"
+								target="_blank"
+								rel="noopener noreferrer"
 								className="text-foreground/60 hover:text-accent transition"
 							>
 								GitHub
 							</a>
 							<a
-								href="#"
+								href="https://www.linkedin.com/in/siddharth-sarode-b7b6b724b"
+								target="_blank"
+								rel="noopener noreferrer"
 								className="text-foreground/60 hover:text-accent transition"
 							>
 								LinkedIn
 							</a>
 							<a
-								href="#"
+								href="https://www.instagram.com/siddharrth.sarode/"
+								target="_blank"
+								rel="noopener noreferrer"
 								className="text-foreground/60 hover:text-accent transition"
 							>
-								Twitter
+								Instagram
 							</a>
 						</div>
 					</div>
 
-					<div className="relative h-96 bg-gradient-to-br from-accent/20 to-accent/5 rounded-2xl flex items-center justify-center overflow-hidden">
-						<div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent"></div>
-						<img
-							src="/professional-portrait-developer.jpg"
-							alt="Professional portrait"
-							className="w-full h-full object-cover"
-						/>
+					<div className="relative h-120 mt-10 bg-linear-to-br from-accent/20 to-accent/5 rounded-2xl flex items-center justify-center overflow-hidden">
+						<div className="absolute inset-0 bg-linear-to-br from-accent/10 to-transparent"></div>
+						<div className="relative size-full">
+							<Image
+								src={"/me_ghibli.png"}
+								alt="Hero page image"
+								fill
+								className="object-fit object-top"
+								priority
+							/>
+						</div>
 					</div>
 				</div>
 			</div>
