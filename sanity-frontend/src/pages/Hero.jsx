@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Hero() {
 	return (
-		<section className="section min-h-screen flex items-center bg-gradient-to-br from-background via-background to-secondary/10">
+		<section className="section min-h-screen flex items-center bg-linear-to-br from-background via-background to-secondary/10">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
 				<div className="grid md:grid-cols-2 gap-12 items-center">
 					<div className="space-y-6">
