@@ -35,7 +35,7 @@ import { createImageUrlBuilder } from "@sanity/image-url";
 export default async function BlogPreview() {
     // get blog posts from Sanity CMS
     const getAllBlogs = async () => {
-        const query = `*[_type == 'blog']`;
+        const query = `*[_type == 'blog'][0..2]`;
         const data = await client.fetch(query);
         return data;
     };
